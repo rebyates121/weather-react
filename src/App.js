@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import WeatherSearch from "./WeatherSearch";
+import axios from "axios";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="container">
+        <h1>Weather App</h1>
+        <WeatherSearch />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <a>Open source code</a> by Rebecca Yates
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
