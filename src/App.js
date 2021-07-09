@@ -1,6 +1,5 @@
 import "./App.css";
 import WeatherSearch from "./WeatherSearch";
-import axios from "axios";
 
 function App() {
   return (
@@ -8,9 +7,19 @@ function App() {
       <div className="container">
         <h1>Weather App</h1>
         <WeatherSearch />
-        <p>
-          <a>Open source code</a> by Rebecca Yates
-        </p>
+        <br />
+        <footer>
+          <p>
+            <a
+              className="code-link"
+              href="https://github.com/rebyates121/weather-react"
+              target="_blank"
+            >
+              Open source code
+            </a>{" "}
+            by Rebecca Yates
+          </p>
+        </footer>
       </div>
     </div>
   );

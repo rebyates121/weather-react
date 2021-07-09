@@ -1,13 +1,18 @@
 body {
-  background-size: contain;
+  background-color: #455d7a;
 }
 
 .container {
   font-family: "New Tegomin", serif;
-  border: solid 5px #000;
+  border: solid 5px rgba(0, 0, 0, 0.9);
   border-radius: 30px;
-  background-color: transparent;
-  padding: 10px 10px 0;
+  background: linear-gradient(
+    179.1deg,
+    rgb(247, 238, 238) -1.9%,
+    rgb(247, 202, 201) 44.9%,
+    rgb(145, 168, 208) 96.1%
+  );
+  padding: 10px 10px 40px;
   max-width: 600px;
   display: block;
   margin: 0 auto;
@@ -37,6 +42,8 @@ h1 {
   color: #ececec;
   text-shadow: 1px 1px 2px #000, 0 0 1em #c28b8f, 0 0 0.2em #c28b8f;
   font-weight: 900;
+  position: relative;
+  top: 30px;
 }
 
 .city-input {
@@ -47,7 +54,7 @@ h1 {
   padding-left: 10px;
   font-size: 18px;
   position: relative;
-  top: 30px;
+  top: 60px;
 }
 
 .city-input:focus {
@@ -57,10 +64,16 @@ h1 {
 .searchButton {
   font-size: 25px;
   background-color: #c28b8f;
-  border: solid 3px #ececec;
+  border: solid 3px rgba(0, 0, 0, 0.6);
+  color: #ececec;
+  padding: 3px 5px;
+  border-radius: 10px;
   box-shadow: 5px 6px 8px #708098;
-  text-shadow: #000 1px 0 10px;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #c28b8f, 0 0 0.2em #c28b8f;
   transition: all 1ms ease-in-out;
+  position: relative;
+  top: 65px;
+  left: 10px;
 }
 
 .searchButton:hover {
@@ -79,6 +92,21 @@ h1 {
 
 .searchButton {
   position: relative;
-  left: 290px;
-  bottom: 25px;
+}
+
+.forecast,
+.weatherStatement {
+  position: relative;
+  top: 70px;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.8;
+  position: relative;
+  top: 40px;
+}
+
+.code-link {
+  text-decoration: none;
 }
