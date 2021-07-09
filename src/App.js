@@ -14,6 +14,7 @@ function App() {
               className="code-link"
               href="https://github.com/rebyates121/weather-react"
               target="_blank"
+              rel="noreferrer"
             >
               Open source code
             </a>{" "}
